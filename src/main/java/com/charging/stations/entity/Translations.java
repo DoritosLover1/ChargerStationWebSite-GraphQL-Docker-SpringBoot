@@ -11,7 +11,7 @@ import lombok.Data;
 )
 @Entity
 @Data
-public class Translation {
+public class Translations {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

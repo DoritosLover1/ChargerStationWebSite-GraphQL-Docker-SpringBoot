@@ -12,7 +12,7 @@ import org.hibernate.type.SqlTypes;
 
 @Entity
 @Data
-public class Station {
+public class Stations {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

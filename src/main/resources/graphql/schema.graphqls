@@ -1,0 +1,30 @@
+type Stations {
+    id: ID!
+    name: String!
+    operator: String
+    lat: Float!
+    lng: Float!
+    countryCode: String
+    address: String
+    powerKw: Float
+    connectorTypes: [String]
+    status: String
+}
+
+type CultureConfigs {
+    countryCode: ID!
+    language: String
+    currency: String
+    distanceUnit: String
+    primaryColor: String
+    dangerColor: String
+    successColor: String
+    warningColor: String
+    colorNotes: String
+    rtl: Boolean
+}
+
+type Query{
+    nearbyStations(lat: Float!, lng: Float!): [Stations]
+    cultureConfigs(countryCode: String!): CultureConfigs
+}

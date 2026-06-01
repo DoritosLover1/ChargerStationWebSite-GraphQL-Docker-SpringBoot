@@ -12,7 +12,7 @@ import tools.jackson.databind.JsonNode;
 
 @Entity
 @Data
-public class CultureConfig {
+public class CultureConfigs {
     @Id
     @Size(min = 0, max = 2, message = "countryCode string must be maximum  2 character")
     private String countryCode;
